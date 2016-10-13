@@ -473,15 +473,15 @@
         }
     }
     
-    if (!CGRectEqualToRect(_scrollView.frame, frame))
-    {
-        _scrollView.frame = frame;
-    }
-    
     if (!CGSizeEqualToSize(_scrollView.contentSize, contentSize))
     {
         _scrollView.contentSize = contentSize;
     }
+	
+	if (!CGRectEqualToRect(_scrollView.frame, frame))
+	{
+		_scrollView.frame = frame;
+	}
 }
 
 - (CGFloat)offsetForItemAtIndex:(NSInteger)index
